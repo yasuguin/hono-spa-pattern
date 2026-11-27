@@ -9,7 +9,7 @@
   },
   "packageManager": "pnpm@10.23.0",
   "dependencies": {
-    "hono": "^4.10.7",
+    "hono": "^4.13.16",
     "@hono/node-server": "^1.19.6",
     "@google/genai": "^1.30.0"
   },
