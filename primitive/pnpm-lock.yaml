@@ -12,8 +12,8 @@ importers:
         specifier: ^1.30.0
         version: 1.30.0
       '@hono/node-server':
-        specifier: ^1.19.6
-        version: 1.19.6(hono@4.10.7)
+        specifier: ^2.1.6
+        version: 2.1.6(hono@4.10.7)
       hono:
         specifier: ^4.10.7
         version: 4.10.7
@@ -195,11 +195,11 @@ packages:
       '@modelcontextprotocol/sdk':
         optional: true
 
-  '@hono/node-server@1.19.6':
-    resolution: {integrity: sha512-Shz/KjlIeAhfiuE93NDKVdZ7HdBVLQAfdbaXEaoAVO3ic9ibRSLGIQGkcBbFyuLr+7/1D5ZCINM8B+6IvXeMtw==}
-    engines: {node: '>=18.14.1'}
+  '@hono/node-server@2.1.6':
+    resolution: {integrity: sha512-p/KH9MnfNcsm3sR6x4lNgm5j+QN4Et8srKredl9DZfXiyZ1UQ3aQ2YVpFLbqktYN5JI+DB+VZFKM2PqE5hLKjQ==}
+    engines: {node: '>=20'}
     peerDependencies:
-      hono: ^4
+      hono: ^4 || ^5.0.0-0
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -321,6 +321,7 @@ packages:
 
   glob@10.5.0:
     resolution: {integrity: sha512-DfXN8DfhJ7NH3Oe7cFmu3NCu1wKbkReJ8TorzSAFbSKrlNaQSKfIzqYqVY8zlbs2NLBbWpRiU52GX2PbaBVNkg==}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   google-auth-library@10.5.0:
@@ -565,7 +566,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@hono/node-server@1.19.6(hono@4.10.7)':
+  '@hono/node-server@2.1.6(hono@4.10.7)':
     dependencies:
       hono: 4.10.7
 
